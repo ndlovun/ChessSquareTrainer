@@ -1,0 +1,6 @@
+Chess board game
+- Starts with a plain board with a random illuminated square
+- You then enter the square id and it changes to green if correct or shows the square id
+- You get 10 chances
+- Score is a percentge
+

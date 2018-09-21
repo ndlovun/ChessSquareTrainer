@@ -1,0 +1,12 @@
+.square {
+	width: 3.8em;
+	height: 3.8em;
+	background-color: #8b4513;
+	
+	
+}
+
+#container {
+	margin: 20px auto;
+	max-width: 600px;
+}
