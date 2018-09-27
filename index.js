@@ -7,40 +7,43 @@ var message = document.getElementById('message');
 var textBox = document.getElementById('textBox');
 
 var tsquare = '';
+var counter = 0;
+var right = 0;
+var wrong = 0;
 
 window.onload = function(){
  	flashAnimation();
- 	setTimeout(function(){
- 		resetBoard();
- 	}, 3500);
  }
-
-//Show or hide answers
-btnShowHide.addEventListener('click', function(){
-    for(var i = 0; i < squares.length; i++){
-		squares[i].style.color = "#8b4513";
-	}
-});
-
-//Select random square to guess
-btnSelectRanSquare.addEventListener('click', function(){
-	RanSquarePicker();
-});
 
 //Reseting the board
 btnReset.addEventListener('click', function(){
 	resetBoard();
+  RanSquarePicker();
+  counter = 0;
+  right = 0;
+  wrong = 0;
+
 });
 
 //Entering the guess and grading logic
 btnEnter.addEventListener('click', function(){
-     console.log(textBox.value);
-     if(textBox.value === tsquare.textContent){
-     	message.textContent = "You got it right!!!!"
-     } 
-     else {
-     	message.textContent = "You got it wrong :("
-     }
+
+  if(counter < 10){
+    console.log(textBox.value);
+    if(textBox.value === tsquare.textContent){
+     message.textContent = "You got it right!, guess next square"
+     right += 1;
+    }
+    else {
+     message.textContent = "You got it wrong :("
+     wrong += 1;
+    }
+    counter += 1;
+    RanSquarePicker();
+  } else {
+    message.textContent = "Game over you got " + ((right / 10).toString() * 100) + "% right.";
+  }
+
 });
 
 //Random number generator 1 - 64.
@@ -79,6 +82,6 @@ function flashAnimation(){
     		clearInterval(interval);
     	}
     	RanSquarePicker();
-    }, 100); 
+    }, 100);
+    console.log(tsquare.textContent);
 };
-

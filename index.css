@@ -1,6 +1,6 @@
 .square {
-	width: 3.8em;
-	height: 3.8em;
+	width: 3.5em;
+	height: 4em;
 	background-color: #8b4513;
 	color: #8b4513;
 }
@@ -8,4 +8,18 @@
 #container {
 	margin: 20px auto;
 	max-width: 600px;
+}
+
+#inner {
+	justify-content: center;
+}
+h3 {
+	text-align: center;
+}
+p {
+	text-align: center;
+}
+
+table {
+	margin: 0;
 }
