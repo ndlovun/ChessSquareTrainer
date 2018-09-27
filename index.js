@@ -11,8 +11,15 @@ var counter = 0;
 var right = 0;
 var wrong = 0;
 
+var sound = new Howl({
+  src: ['sounds/squiggle.mp3']
+});
+
+
 window.onload = function(){
+  	sound.play();
  	flashAnimation();
+
  }
 
 //Reseting the board
@@ -78,7 +85,7 @@ function flashAnimation(){
   	var timesRun = 0;
     var interval = setInterval(function(){
     	timesRun += 1;
-    	if(timesRun === 30){
+    	if(timesRun === 10){
     		clearInterval(interval);
     	}
     	RanSquarePicker();
