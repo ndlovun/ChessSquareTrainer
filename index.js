@@ -32,11 +32,11 @@ btnEnter.addEventListener('click', function(){
   if(counter < 10){
     console.log(textBox.value);
     if(textBox.value === tsquare.textContent){
-     message.textContent = "You got it right!, guess next square"
+     message.textContent = "Correct!, guess next square."
      right += 1;
     }
     else {
-     message.textContent = "You got it wrong :("
+     message.textContent = "Incorrect, guess next square."
      wrong += 1;
     }
     counter += 1;
