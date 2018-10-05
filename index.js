@@ -49,7 +49,7 @@ btnEnter.addEventListener('click', function(){
 
 //Random number generator 1 - 64.
 function randomNum(){
-	var num = Math.floor(Math.random() * (65 - 1)) + 1;
+	var num = Math.floor(Math.random() * 64 + 1);
 	return num;
 }
 
