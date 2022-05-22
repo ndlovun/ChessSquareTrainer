@@ -13,11 +13,11 @@ var wrong = 0;
 
 window.onload = function(){
   	flashAnimation();
-
  }
 
 //Reseting the board
 btnReset.addEventListener('click', function(){
+
 	resetBoard();
   RanSquarePicker();
   counter = 0;
@@ -34,14 +34,17 @@ btnEnter.addEventListener('click', function(){
     if(textBox.value === tsquare.textContent){
      message.textContent = "Correct!, guess next square."
      right += 1;
+	 textBox.value = "";
     }
     else {
      message.textContent = "Incorrect, guess next square."
      wrong += 1;
+	 textBox.value = "";
     }
     counter += 1;
     RanSquarePicker();
   } else {
+	textBox.value = "";
     message.textContent = "Game over you got " + ((right / 10).toString() * 100) + "% right.";
   }
 
