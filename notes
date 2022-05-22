@@ -5,7 +5,6 @@ Chess board game
 - Score is a percentge
 
 To do 
-- Clear the text box after submitting guess
 - play sound when the game starts
 - do not allow an empty guess instead output message demanding a guess
 

@@ -28,6 +28,10 @@ btnReset.addEventListener('click', function(){
 
 //Entering the guess and grading logic
 btnEnter.addEventListener('click', function(){
+	//do not allow an empty guess
+	if (textBox.value === ""){
+		message.textContent = "Please enter a guess!"
+	}
 
   if(counter < 10){
     console.log(textBox.value);
