@@ -17,12 +17,12 @@ window.onload = function(){
 
 //Reseting the board
 btnReset.addEventListener('click', function(){
-
+	flashAnimation();
 	resetBoard();
-  RanSquarePicker();
-  counter = 0;
-  right = 0;
-  wrong = 0;
+	RanSquarePicker();
+	counter = 0;
+	right = 0;
+	wrong = 0;
 
 });
 
