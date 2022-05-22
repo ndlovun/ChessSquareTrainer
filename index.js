@@ -69,7 +69,8 @@ function RanSquarePicker(){
 	tsquare = document.getElementById(randomNum().toString());
 	tsquare.style.color = "Green";
 	console.log(tsquare.textContent);
-	tsquare.style.backgroundColor = "Green";
+	//tsquare.style.backgroundColor = "Green";
+	tsquare.style.backgroundColor = "#ffbd33";
 
 }
 
