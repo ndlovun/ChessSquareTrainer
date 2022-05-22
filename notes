@@ -1,12 +1,11 @@
 Chess board game
 - Starts with a plain board with a random illuminated square
-- You then enter the square id and it changes to green if correct or shows the square id
+- You enter your guess and it lets you know if you are right or wrong
 - You get 10 chances
 - Score is a percentge
 
 To do 
 - play sound when the game starts
-- do not allow an empty guess instead output message demanding a guess
 
 Future features
 - Add optional login to track scores
