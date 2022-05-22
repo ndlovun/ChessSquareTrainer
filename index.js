@@ -13,35 +13,41 @@ var wrong = 0;
 
 window.onload = function(){
   	flashAnimation();
-
  }
 
 //Reseting the board
 btnReset.addEventListener('click', function(){
+	flashAnimation();
 	resetBoard();
-  RanSquarePicker();
-  counter = 0;
-  right = 0;
-  wrong = 0;
+	RanSquarePicker();
+	counter = 0;
+	right = 0;
+	wrong = 0;
 
 });
 
 //Entering the guess and grading logic
 btnEnter.addEventListener('click', function(){
-
-  if(counter < 10){
+	//do not allow an empty guess
+	if (textBox.value === ""){
+		message.textContent = "Please enter a guess!"
+	}
+    else if(counter < 10){
     console.log(textBox.value);
     if(textBox.value === tsquare.textContent){
      message.textContent = "Correct!, guess next square."
      right += 1;
+	 textBox.value = "";
     }
     else {
      message.textContent = "Incorrect, guess next square."
      wrong += 1;
+	 textBox.value = "";
     }
     counter += 1;
     RanSquarePicker();
   } else {
+	textBox.value = "";
     message.textContent = "Game over you got " + ((right / 10).toString() * 100) + "% right.";
   }
 
