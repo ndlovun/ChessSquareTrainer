@@ -61,8 +61,10 @@ function randomNum(){
 
 function RanSquarePicker(){
 	for(var i = 0; i < squares.length; i++){
-		squares[i].style.backgroundColor = "#8b4513";
-		squares[i].style.color = "#8b4513";
+		// squares[i].style.backgroundColor = "#8b4513";
+		// squares[i].style.color = "#8b4513";
+		squares[i].style.backgroundColor = "#ffbd33";
+		squares[i].style.color = "#ffbd33";
 	}
 
 	tsquare = document.getElementById(randomNum().toString());
