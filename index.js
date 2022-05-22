@@ -32,8 +32,7 @@ btnEnter.addEventListener('click', function(){
 	if (textBox.value === ""){
 		message.textContent = "Please enter a guess!"
 	}
-
-  if(counter < 10){
+    else if(counter < 10){
     console.log(textBox.value);
     if(textBox.value === tsquare.textContent){
      message.textContent = "Correct!, guess next square."
