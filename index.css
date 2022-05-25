@@ -1,7 +1,7 @@
 .square {
 	width: 3.5em;
 	height: 4em;
-	#background-color: #8b4513;
+	/* background-color: #8b4513; */
 	background-color: #4e2b00
 	color: #8b4513;
 }
