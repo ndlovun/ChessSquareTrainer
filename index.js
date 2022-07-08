@@ -26,9 +26,19 @@ btnReset.addEventListener('click', function(){
 
 });
 
+//submitting guess by pressing enter 
+document.getElementById('textBox')
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.key === 'Enter') {
+        document.getElementById('enter').click();
+    }
+});
+
 //Entering the guess and grading logic
-btnEnter.addEventListener('click', function(){
-	//do not allow an empty guess
+function buttonCode()
+{
+  //do not allow an empty guess
 	if (textBox.value === ""){
 		message.textContent = "Please enter a guess!"
 	}
@@ -50,8 +60,10 @@ btnEnter.addEventListener('click', function(){
 	textBox.value = "";
     message.textContent = "Game over you got " + ((right / 10).toString() * 100) + "% right.";
   }
+}
 
-});
+
+
 
 //Random number generator 1 - 64.
 function randomNum(){
