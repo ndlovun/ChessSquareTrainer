@@ -8,6 +8,11 @@ To do
 -
 
 Future features
+-move to web framework
+-reset propely at the end of a game 
+    -ask if users wants to play a new game
+- check for valid guesses
 - Add optional login to track scores
-    - track improvement over time
-    - add database to store user scores 
+- add database to store user scores 
+- track improvement over time
+- display last 10 scores in a graph
