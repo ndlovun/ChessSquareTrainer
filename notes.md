@@ -4,14 +4,12 @@ Chess board game
 - You get 10 chances
 - Score is a percentge
 
-To do 
--
 
 Future features
 -move to web framework
 -reset propely at the end of a game 
     -ask if users wants to play a new game
-- check for valid guesses
+-~~ check for valid guesses ~~
 - Add optional login to track scores
 - add database to store user scores 
 - track improvement over time
